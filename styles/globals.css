@@ -1,5 +1,11 @@
+@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
 html,
 body {
+  background: indigo;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -14,13 +20,16 @@ a {
 * {
   box-sizing: border-box;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.myfont{
+  font-family: cursive;
 }
+@media only screen and (max-width: 280px) {
+  .footer{
+    margin-top:1px;
+    font-size:18px;
+    height: 50px;
+  }     
+  
+
+}
+
